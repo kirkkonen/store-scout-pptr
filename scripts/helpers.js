@@ -14,7 +14,7 @@ module.exports.scrapAppStore = async function (page, app) {
   
     await page.click('.version-history');
     await page.waitFor(3000);
-    await page.click('.version-history');
+    // await page.click('.version-history');
     await page.waitForSelector('#modal-container > .we-modal');
   
     const version = await page.$('.version-history__item__version-number');
@@ -40,6 +40,8 @@ module.exports.scrapAppStore = async function (page, app) {
     await page.setViewport({ width: 1792, height: 940 });
     
     var updates = ['Android']
+
+    await page.waitFor(3000)
 
     var appName = await page.$("h1");
     var appNameText = await page.evaluate(appName => appName.innerText, appName);

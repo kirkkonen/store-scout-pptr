@@ -116,6 +116,7 @@ const { scrapPlayStore } = require('./helpers')
   
   
       } catch (e) {
+        await page.screenshot({ path: 'android-error-screenshot.png' })
         console.log(e)
         process.exit()
         

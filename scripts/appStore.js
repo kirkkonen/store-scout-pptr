@@ -116,6 +116,7 @@ const { scrapAppStore } = require('./helpers')
 
 
     } catch (e) {
+      await page.screenshot({ path: 'ios-error-screenshot.png' })
       console.log(e)
       process.exit()
       

@@ -2,8 +2,8 @@
 
 module.exports.scrapAppStore = async function (page, app) {
 
-    await page.goto(`https://apps.apple.com/cy/app/${app}`);
-  
+    await page.goto(`https://apps.apple.com/gb/app/${app}`);
+
     await page.setViewport({ width: 1792, height: 940 });
     
     var updates = ['iOS']
@@ -14,7 +14,7 @@ module.exports.scrapAppStore = async function (page, app) {
   
     await page.click('.version-history');
     await page.waitFor(3000);
-    // await page.click('.version-history');
+    await page.click('.version-history');
     await page.waitForSelector('#modal-container > .we-modal');
   
     const version = await page.$('.version-history__item__version-number');

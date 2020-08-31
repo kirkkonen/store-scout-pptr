@@ -8,7 +8,13 @@ const { scrapAppStore } = require('./helpers')
     });
 
     const page = await browser.newPage();
+    const context = browser.defaultBrowserContext()
+    await context.overridePermissions("https://apps.apple.com", ["geolocation"])
 
+    await page.goto(`https://apps.apple.com`);
+
+    await page.setGeolocation({ latitude: 51, longitude: 0})
+    
     try {
 
       // FXPro CTrader

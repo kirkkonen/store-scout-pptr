@@ -21,8 +21,8 @@ const { scrapAppStore } = require('./helpers')
       var app = 'fxpro-direct-trading-online/id1436961771'
       await scrapAppStore(page, app)
       // XM
-      var app = 'xm-trading-point/id1072084799'
-      await scrapAppStore(page, app)
+      // var app = 'xm-trading-point/id1072084799'
+      // await scrapAppStore(page, app)
 
       // MT4
       var app = 'metatrader-4/id496212596'

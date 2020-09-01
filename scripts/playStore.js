@@ -82,10 +82,6 @@ const { scrapPlayStore } = require('./helpers')
         // Roboforex
         var app = 'com.roboforex.webtrader'
         await scrapPlayStore(page, app)
-
-        // FXTM
-        var app = 'com.fxtm.prod'
-        await scrapPlayStore(page, app)
   
         // Forex.com 
         var app = 'com.forex.whitelabel.forex'
@@ -113,7 +109,11 @@ const { scrapPlayStore } = require('./helpers')
         
         // XM
         var app = 'com.xm.webapp'
-        await scrapPlayStore(page, app)  
+        await scrapPlayStore(page, app)
+        
+        // FXTM
+        var app = 'com.fxtm.prod'
+        await scrapPlayStore(page, app)
   
       } catch (e) {
         await page.screenshot({ path: 'android-error-screenshot.png' })

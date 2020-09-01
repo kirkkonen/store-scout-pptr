@@ -41,7 +41,7 @@ module.exports.scrapAppStore = async function (page, app) {
     
     var updates = ['Android']
 
-    await page.waitFor(6000)
+    await page.waitFor(3000)
 
     var appName = await page.$("h1");
     var appNameText = await page.evaluate(appName => appName.innerText, appName);
@@ -56,6 +56,8 @@ module.exports.scrapAppStore = async function (page, app) {
     updates.push(currentVersionText)
 
     var releaseNotes = await page.$("c-wiz[jsrenderer=eG38Ge] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span[jsslot]");
+    releaseNotes.hover()
+    await page.screenshot({ path: 'playstore-releasenotes-screenshot.png' })
     var releaseNotesText = await page.evaluate(releaseNotes => releaseNotes.innerText, releaseNotes);
     updates.push(releaseNotesText)
 

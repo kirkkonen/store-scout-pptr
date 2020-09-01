@@ -106,14 +106,15 @@ const { scrapPlayStore } = require('./helpers')
         // Admiral Markets
         var app = 'com.admiralmarkets'
         await scrapPlayStore(page, app)
+
+        // FXTM
+        var app = 'com.fxtm.prod'
+        await scrapPlayStore(page, app)       
         
         // XM
         var app = 'com.xm.webapp'
         await scrapPlayStore(page, app)
         
-        // FXTM
-        var app = 'com.fxtm.prod'
-        await scrapPlayStore(page, app)
   
       } catch (e) {
         await page.screenshot({ path: 'android-error-screenshot.png' })

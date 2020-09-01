@@ -56,7 +56,7 @@ module.exports.scrapAppStore = async function (page, app) {
     updates.push(currentVersionText)
 
     var releaseNotes = await page.$("c-wiz[jsrenderer=eG38Ge] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span[jsslot]");
-    var releaseNotesText = await page.evaluate(releaseNotes => releaseNotes.innerHTML, releaseNotes);
+    var releaseNotesText = await page.evaluate(releaseNotes => releaseNotes.innerText, releaseNotes);
     updates.push(releaseNotesText)
 
     console.log(updates)

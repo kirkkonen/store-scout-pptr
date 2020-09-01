@@ -62,7 +62,7 @@ module.exports.scrapAppStore = async function (page, app) {
 
     } 
     catch (e) {
-    console.log(e)
+    console.log("Unable to get release notes")
     }
 
     console.log(updates)

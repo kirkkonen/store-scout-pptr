@@ -10,14 +10,15 @@ const { scrapPlayStore } = require('./helpers')
       const page = await browser.newPage();
   
       try {
-  
-        // FXPro CTrader
-        var app = 'com.fxproctrader.ct'
-        await scrapPlayStore(page, app)
+
         // XM
         var app = 'com.xm.webapp'
         await scrapPlayStore(page, app)
-  
+        
+        // FXPro CTrader
+        var app = 'com.fxproctrader.ct'
+        await scrapPlayStore(page, app)
+
         // MT4
         var app = 'net.metaquotes.metatrader4'
         await scrapPlayStore(page, app)

@@ -41,7 +41,7 @@ module.exports.scrapAppStore = async function (page, app) {
     
     var updates = ['Android']
 
-    await page.waitFor(3000)
+    await page.waitFor(6000)
 
     var appName = await page.$("h1");
     var appNameText = await page.evaluate(appName => appName.innerText, appName);

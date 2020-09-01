@@ -14,10 +14,6 @@ const { scrapPlayStore } = require('./helpers')
         // MT4
         var app = 'net.metaquotes.metatrader4'
         await scrapPlayStore(page, app)        
-
-        // XM
-        var app = 'com.xm.webapp'
-        await scrapPlayStore(page, app)
         
         // FXPro CTrader
         var app = 'com.fxproctrader.ct'
@@ -114,7 +110,10 @@ const { scrapPlayStore } = require('./helpers')
         // Admiral Markets
         var app = 'com.admiralmarkets'
         await scrapPlayStore(page, app)
-  
+        
+        // XM
+        var app = 'com.xm.webapp'
+        await scrapPlayStore(page, app)  
   
       } catch (e) {
         await page.screenshot({ path: 'android-error-screenshot.png' })

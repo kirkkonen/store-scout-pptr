@@ -25,13 +25,7 @@ const { scrapAppStore } = require('./helpers')
       var app = 'metatrader-5/id413251709'
       await scrapAppStore(page, app)      
 
-      // FXPro CTrader
-      var app = 'fxpro-direct-trading-online/id1436961771'
-      await scrapAppStore(page, app)
       
-      // XM
-      var app = 'xm-trading-point/id1072084799'
-      await scrapAppStore(page, app)      
       
       // HF
       var app = 'hf-forex-trading/id1097517968'
@@ -110,8 +104,8 @@ const { scrapAppStore } = require('./helpers')
       await scrapAppStore(page, app)
 
       // Exness 
-      var app = 'exness-trader-trade-on-the-go/id1359763701'
-      await scrapAppStore(page, app)
+      // var app = 'exness-trader-trade-on-the-go/id1359763701'
+      // await scrapAppStore(page, app)
       
       // IQ Option 
       var app = 'iq-option-fx-broker/id871125783'

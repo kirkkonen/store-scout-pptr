@@ -68,8 +68,8 @@ const { scrapPlayStore } = require('./helpers')
         await scrapPlayStore(page, app)
   
         // IQ Option
-        // var app = 'com.iqoption'
-        // await scrapPlayStore(page, app)
+        var app = 'com.iqoption'
+        await scrapPlayStore(page, app)
   
         // Forex4you
         var app = 'com.forex4you.android'

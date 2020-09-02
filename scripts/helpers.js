@@ -14,8 +14,13 @@ module.exports.scrapAppStore = async function (page, app) {
   
     await page.click('.version-history');
     await page.waitFor(3000);
-    // await page.click('.version-history');
-    await page.waitForSelector('#modal-container > .we-modal');
+    
+    try {
+        await page.waitForSelector('#modal-container > .we-modal');
+    } catch {
+        await page.click('.version-history');
+        await page.waitForSelector('#modal-container > .we-modal');
+    } 
   
     const version = await page.$('.version-history__item__version-number');
     const versionText = await page.evaluate(version => version.innerText, version);

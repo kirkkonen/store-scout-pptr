@@ -17,28 +17,20 @@ const { scrapAppStore } = require('./helpers')
     
     try {
 
-      // FXPro CTrader
-      // var app = 'fxpro-direct-trading-online/id1436961771'
-      // await scrapAppStore(page, app)
-
-            // Exness 
-            var app = 'exness-trader-trade-on-the-go/id1359763701'
-            await scrapAppStore(page, app)
-      
-            // IQ Option 
-            var app = 'iq-option-fx-broker/id871125783'
-            await scrapAppStore(page, app)
-      
-      // XM
-      var app = 'xm-trading-point/id1072084799'
-      await scrapAppStore(page, app)
-
       // MT4
       var app = 'metatrader-4/id496212596'
       await scrapAppStore(page, app)
 
       // MT5
       var app = 'metatrader-5/id413251709'
+      await scrapAppStore(page, app)      
+
+      // FXPro CTrader
+      var app = 'fxpro-direct-trading-online/id1436961771'
+      await scrapAppStore(page, app)
+      
+      // XM
+      var app = 'xm-trading-point/id1072084799'
       await scrapAppStore(page, app)      
       
       // HF
@@ -81,12 +73,6 @@ const { scrapAppStore } = require('./helpers')
       var app = 'tradingview-stocks-forex/id1205990992'
       await scrapAppStore(page, app)
 
-
-
-      // Forex4you
-      var app = 'forex4you-trading-platform/id1008039704'
-      await scrapPlayStore(page, app)
-
       // AAATrade
       var app = 'aaatrade/id1196285884'
       await scrapAppStore(page, app)
@@ -123,6 +109,17 @@ const { scrapAppStore } = require('./helpers')
       var app = 'admiral-markets/id1222861799'
       await scrapAppStore(page, app)
 
+      // Exness 
+      var app = 'exness-trader-trade-on-the-go/id1359763701'
+      await scrapAppStore(page, app)
+      
+      // IQ Option 
+      var app = 'iq-option-fx-broker/id871125783'
+      await scrapAppStore(page, app)
+
+      // Forex4you
+      var app = 'forex4you-trading-platform/id1008039704'
+      await scrapAppStore(page, app)
 
     } catch (e) {
       await page.screenshot({ path: 'ios-error-screenshot.png' })

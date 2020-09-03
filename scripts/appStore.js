@@ -32,15 +32,10 @@ const { scrapAppStore } = require('./helpers')
       // MT5
       var app = 'metatrader-5/id413251709'
       await scrapAppStore(page, app)      
-
       
       // HF
       var app = 'hf-forex-trading/id1097517968'
       await scrapAppStore(page, app)      
-
-      // IG
-      var app = 'ig-cfd-trading-and-forex/id406492428'
-      await scrapAppStore(page, app)
 
       // Trading 212
       var app = 'trading-212/id566325832'
@@ -112,6 +107,10 @@ const { scrapAppStore } = require('./helpers')
       
       // IQ Option 
       var app = 'iq-option-fx-broker/id871125783'
+      await scrapAppStore(page, app)
+
+      // IG
+      var app = 'ig-cfd-trading-and-forex/id406492428'
       await scrapAppStore(page, app)
 
 

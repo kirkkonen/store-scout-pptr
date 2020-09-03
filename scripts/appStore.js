@@ -30,7 +30,6 @@ const { scrapAppStore } = require('./helpers')
       await scrapAppStore(page, app)      
 
       
-      
       // HF
       var app = 'hf-forex-trading/id1097517968'
       await scrapAppStore(page, app)      

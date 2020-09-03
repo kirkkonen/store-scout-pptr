@@ -18,8 +18,8 @@ const { scrapAppStore } = require('./helpers')
     try {
 
       // Exness 
-      var app = 'exness-trader-trade-on-the-go/id1359763701'
-      await scrapAppStore(page, app)
+      // var app = 'exness-trader-trade-on-the-go/id1359763701'
+      // await scrapAppStore(page, app)
 
       // Forex4you
       var app = 'forex4you-trading-platform/id1008039704'
@@ -36,6 +36,10 @@ const { scrapAppStore } = require('./helpers')
       // HF
       var app = 'hf-forex-trading/id1097517968'
       await scrapAppStore(page, app)      
+
+      // IG
+      var app = 'ig-cfd-trading-and-forex/id406492428'
+      await scrapAppStore(page, app)
 
       // Trading 212
       var app = 'trading-212/id566325832'
@@ -107,10 +111,6 @@ const { scrapAppStore } = require('./helpers')
       
       // IQ Option 
       var app = 'iq-option-fx-broker/id871125783'
-      await scrapAppStore(page, app)
-
-      // IG
-      var app = 'ig-cfd-trading-and-forex/id406492428'
       await scrapAppStore(page, app)
 
 

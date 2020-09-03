@@ -22,8 +22,8 @@ const { scrapAppStore } = require('./helpers')
       // await scrapAppStore(page, app)
 
       // Forex4you
-      var app = 'forex4you-trading-platform/id1008039704'
-      await scrapAppStore(page, app)
+      // var app = 'forex4you-trading-platform/id1008039704'
+      // await scrapAppStore(page, app)
 
       // MT4
       var app = 'metatrader-4/id496212596'

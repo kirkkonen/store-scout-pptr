@@ -1,5 +1,5 @@
 const puppeteer = require("puppeteer");
-const { scrapAppStore } = require('./helpers')
+const { scrapAppStore } = require('./helpersIndia')
 
 //Open Puppeteer
 ;(async () => {

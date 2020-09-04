@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "appstore": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStore.js",
-    "playstore": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/playStore.js"
+    "playstore": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/playStore.js",
+    "appStoreIndia": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStoreIndia.js"
   },
   "author": "Andrei Chepelev",
   "license": "ISC",

@@ -17,14 +17,6 @@ const { scrapAppStore } = require('./helpers')
     
     try {
 
-      // Exness 
-      // var app = 'exness-trader-trade-on-the-go/id1359763701'
-      // await scrapAppStore(page, app)
-
-      // Forex4you
-      // var app = 'forex4you-trading-platform/id1008039704'
-      // await scrapAppStore(page, app)
-
       // MT4
       var app = 'metatrader-4/id496212596'
       await scrapAppStore(page, app)
@@ -108,11 +100,20 @@ const { scrapAppStore } = require('./helpers')
       // Admiral Markets
       var app = 'admiral-markets/id1222861799'
       await scrapAppStore(page, app)
+
+    // All the following brokers are monitored from the server in Bangalore
       
       // IQ Option 
-      var app = 'iq-option-fx-broker/id871125783'
-      await scrapAppStore(page, app)
+      // var app = 'iq-option-fx-broker/id871125783'
+      // await scrapAppStore(page, app)
 
+      // Exness 
+      // var app = 'exness-trader-trade-on-the-go/id1359763701'
+      // await scrapAppStore(page, app)
+
+      // Forex4you
+      // var app = 'forex4you-trading-platform/id1008039704'
+      // await scrapAppStore(page, app)
 
 
     } catch (e) {

@@ -2,7 +2,7 @@
 
 module.exports.scrapAppStore = async function (page, app) {
 
-    await page.goto(`https://apps.apple.com/gb/app/${app}`);
+    await page.goto(`https://apps.apple.com/ca/app/${app}`);
 
     await page.setViewport({ width: 1792, height: 940 });
     

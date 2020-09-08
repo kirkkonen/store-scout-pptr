@@ -18,6 +18,15 @@ const { scrapPlayStore } = require('./helpers')
         // FXPro CTrader
         var app = 'com.fxproctrader.ct'
         await scrapPlayStore(page, app)
+
+        // FXPro Direct
+        var app = 'com.fxpro.direct.app'
+        await scrapPlayStore(page, app)        
+
+        // FXPro MT4/MT5/CTrader manager
+        var app = 'com.fxpro.direct.application'
+        await scrapPlayStore(page, app)
+
   
         // MT5
         var app = 'net.metaquotes.metatrader5'

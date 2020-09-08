@@ -17,6 +17,11 @@ const { scrapAppStore } = require('./helpers')
     
     try {
 
+      // FXPro
+
+      var app = 'fxpro-ctrader/id838925664'
+      await scrapAppStore(page, app)
+
       // MT4
       var app = 'metatrader-4/id496212596'
       await scrapAppStore(page, app)

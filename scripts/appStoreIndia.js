@@ -28,6 +28,11 @@ const { scrapAppStore } = require('./helpersIndia')
       // IQ Option 
       var app = 'iq-option-fx-broker/id871125783'
       await scrapAppStore(page, app)
+
+      // FXPro Trading Online
+
+      var app = 'fxpro-trading-online/id1388838533'
+      await scrapAppStore(page, app)      
       
       
     // All the following brokers are monitored from the server in New York

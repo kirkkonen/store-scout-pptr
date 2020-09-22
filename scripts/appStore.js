@@ -19,8 +19,8 @@ const { scrapAppStore } = require('./helpers')
 
       // FXPro CTrader
 
-      var app = 'fxpro-ctrader/id838925664'
-      await scrapAppStore(page, app)
+      // var app = 'fxpro-ctrader/id838925664'
+      // await scrapAppStore(page, app)
 
       // FXPro Direct
       var app = 'fxpro-online-trading/id1436961771'

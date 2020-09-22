@@ -29,6 +29,11 @@ const { scrapAppStore } = require('./helpersIndia')
 
       var app = 'fxpro-trading-online/id1388838533'
       await scrapAppStore(page, app)
+
+      // FXPro CTrader
+
+      var app = 'fxpro-ctrader/id838925664'
+      await scrapAppStore(page, app)      
       
       // Forex4you
       var app = 'forex4you-trading-platform/id1008039704'

@@ -121,8 +121,8 @@ const { scrapAppStore } = require('./helpers')
       // await scrapAppStore(page, app)
 
       // Forex4you
-      // var app = 'forex4you-trading-platform/id1008039704'
-      // await scrapAppStore(page, app)
+      var app = 'forex4you-trading-platform/id1008039704'
+      await scrapAppStore(page, app)
 
 
     } catch (e) {

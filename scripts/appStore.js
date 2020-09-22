@@ -39,8 +39,8 @@ const { scrapAppStore } = require('./helpers')
       await scrapAppStore(page, app)      
 
       // IG
-      var app = 'ig-cfd-trading-and-forex/id406492428'
-      await scrapAppStore(page, app)
+      // var app = 'ig-cfd-trading-and-forex/id406492428'
+      // await scrapAppStore(page, app)
 
       // Trading 212
       var app = 'trading-212/id566325832'

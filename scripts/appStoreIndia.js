@@ -30,6 +30,11 @@ const { scrapAppStore } = require('./helpersIndia')
       var app = 'fxpro-trading-online/id1388838533'
       await scrapAppStore(page, app)
 
+      //IG
+      
+      var app = 'ig-cfd-trading-and-forex/id406492428'
+      await scrapAppStore(page, app)
+
       // FXPro CTrader
 
       var app = 'fxpro-ctrader/id838925664'

@@ -12,36 +12,19 @@ const { scrapAppStore } = require('./helpers')
     await context.overridePermissions("https://apps.apple.com", ["geolocation"])
 
     await page.goto(`https://apps.apple.com`);
+        
     
     
     try {
 
       // FXPro CTrader
-
       var app = 'fxpro-ctrader/id838925664'
       await scrapAppStore(page, app)
-      
-    } catch (e) {
-      await page.screenshot({ path: `ios-fxpro-ctrader.png` })
-      console.log(e)   
-    } 
 
-
-    try {
 
       // MT4
-
       var app = 'metatrader-4/id496212596'
-      await scrapAppStore(page, app)
-      
-    } catch (e) {
-      await page.screenshot({ path: `ios-mt4.png` })
-      console.log(e)  
-    } 
-    
-    
-    
-    try {
+      await scrapAppStore(page, app)      
 
 
       // FXPro Direct

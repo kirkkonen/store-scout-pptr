@@ -14,10 +14,7 @@ const { scrapAppStore } = require('./helpers')
     await page.goto(`https://apps.apple.com`);
         
     
-    
-    try {
-
-      // FXPro CTrader
+          // FXPro CTrader
       var app = 'fxpro-ctrader/id838925664'
       await scrapAppStore(page, app)
 
@@ -125,15 +122,9 @@ const { scrapAppStore } = require('./helpers')
       var app = 'forex4you-trading-platform/id1008039704'
       await scrapAppStore(page, app)
 
-
-    } catch (e) {
-      await page.screenshot({ path: `ios-error-screenshot.png` })
-      console.log(e)
-      process.exit()
-      
-    } finally {
       await browser.close()
-    }
+
+    
 })()
 
 

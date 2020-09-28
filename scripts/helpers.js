@@ -42,8 +42,8 @@ module.exports.scrapAppStore = async function (page, app) {
         console.log(updates)
         
     } catch (e) {
-        await page.screenshot({ path: `ios-error-${app}.png` })
-        console.log('Page did not load')
+        await page.screenshot({ path: `ios-error.png` })
+        console.log(`Page did not load for ${app}`)
     }
 
   }

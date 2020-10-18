@@ -30,7 +30,11 @@ const { scrapAppStore } = require('./helpers')
 
       // MT5
       var app = 'metatrader-5/id413251709'
-      await scrapAppStore(page, app)      
+      await scrapAppStore(page, app)
+      
+      // XM
+      var app = 'xm-trading-point/id1072084799'
+      await scrapAppStore(page, app)    
       
       // HF
       var app = 'hf-forex-trading/id1097517968'

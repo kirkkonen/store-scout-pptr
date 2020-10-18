@@ -50,35 +50,42 @@ module.exports.scrapAppStore = async function (page, app) {
 
   module.exports.scrapPlayStore = async function (page, app) {
 
-    await page.goto(`https://play.google.com/store/apps/details?id=${app}`);
-  
-    await page.setViewport({ width: 1792, height: 940 });
-    
-    var updates = ['Android']
-
-    await page.waitFor(3000)
-
-    var appName = await page.$("h1");
-    var appNameText = await page.evaluate(appName => appName.innerText, appName);
-    updates.push(appNameText)
-
-    var updateDate = await page.$("div[class=hAyfc]:nth-child(1) > span[class=htlgb]");
-    var updateDateText = await page.evaluate(updateDate => updateDate.innerText, updateDate);
-    updates.push(updateDateText)
-
-    var currentVersion = await page.$("div[class=hAyfc]:nth-child(4) > span[class=htlgb]");
-    var currentVersionText = await page.evaluate(currentVersion => currentVersion.innerText, currentVersion);
-    updates.push(currentVersionText)
-
     try {
-        var releaseNotes = await page.$("c-wiz[jsrenderer=eG38Ge] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span[jsslot]");
-        var releaseNotesText = await page.evaluate(releaseNotes => releaseNotes.innerText, releaseNotes);
-        updates.push(releaseNotesText)
 
-    } 
-    catch (e) {
-    console.log("Unable to get release notes")
+        await page.goto(`https://play.google.com/store/apps/details?id=${app}`);
+  
+        await page.setViewport({ width: 1792, height: 940 });
+        
+        var updates = ['Android']
+    
+        await page.waitFor(3000)
+    
+        var appName = await page.$("h1");
+        var appNameText = await page.evaluate(appName => appName.innerText, appName);
+        updates.push(appNameText)
+    
+        var updateDate = await page.$("div[class=hAyfc]:nth-child(1) > span[class=htlgb]");
+        var updateDateText = await page.evaluate(updateDate => updateDate.innerText, updateDate);
+        updates.push(updateDateText)
+    
+        var currentVersion = await page.$("div[class=hAyfc]:nth-child(4) > span[class=htlgb]");
+        var currentVersionText = await page.evaluate(currentVersion => currentVersion.innerText, currentVersion);
+        updates.push(currentVersionText)
+    
+        try {
+            var releaseNotes = await page.$("c-wiz[jsrenderer=eG38Ge] > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span[jsslot]");
+            var releaseNotesText = await page.evaluate(releaseNotes => releaseNotes.innerText, releaseNotes);
+            updates.push(releaseNotesText)
+    
+        } 
+        catch (e) {
+        console.log("Unable to get release notes")
+        }
+    
+        console.log(updates)
+        
+    } catch (e) {
+        await page.screenshot({ path: `ios-error.png` })
+        console.log(`Page did not load for ${app}`)
     }
-
-    console.log(updates)
   }

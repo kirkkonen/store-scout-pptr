@@ -6,7 +6,9 @@
   "scripts": {
     "appstore": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStore.js",
     "playstore": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/playStore.js",
-    "appStoreIndia": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStoreIndia.js"
+    "appStoreIndia": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStoreIndia.js",
+    "appStoreTop": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/appStoreTop.js",
+    "playStoreTop": "./node_modules/mocha/bin/mocha --timeout=30000 ./scripts/playStoreTop.js"
   },
   "author": "Andrei Chepelev",
   "license": "ISC",

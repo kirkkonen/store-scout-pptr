@@ -29,6 +29,10 @@ const { scrapAppStore } = require('./helpers')
       var app = 'twitter/id333903271'
       await scrapAppStore(page, app)
 
+      //Whatsapp
+      var app = 'whatsapp-messenger/id310633997'
+      await scrapAppStore(page, app)
+
       //Reddit 
       var app = 'reddit/id1064216828'
       await scrapAppStore(page, app)
@@ -217,14 +221,6 @@ const { scrapAppStore } = require('./helpers')
       var app = 'foodpanda-food-delivery/id758103884'
       await scrapAppStore(page, app)
 
-      //DoorDash 
-      var app = 'doordash-food-delivery/id719972451'
-      await scrapAppStore(page, app)
-
-      //Groupon 
-      var app = 'groupon/id352683833'
-      await scrapAppStore(page, app)
-
       //AliExpress 
       var app = 'aliexpress-shopping-app/id436672029'
       await scrapAppStore(page, app)
@@ -235,10 +231,6 @@ const { scrapAppStore } = require('./helpers')
 
       //Amazon 
       var app = 'amazon-shopping/id297606951'
-      await scrapAppStore(page, app)
-
-      //Shopee 
-      var app = 'shopee-no-1-online-platform/id959841854'
       await scrapAppStore(page, app)
 
       //Photoshop Express 

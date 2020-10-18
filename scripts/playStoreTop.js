@@ -57,6 +57,10 @@ const { scrapPlayStore } = require('./helpers')
       //Gmail 
       var app = 'com.google.android.gm'
       await scrapPlayStore(page, app)  
+
+      //Whatsapp 
+      var app = 'com.whatsapp'
+      await scrapPlayStore(page, app)        
       
       //Outlook 
       var app = 'com.microsoft.office.outlook'

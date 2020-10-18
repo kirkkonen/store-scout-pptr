@@ -68,7 +68,7 @@ const { scrapPlayStore } = require('./helpers')
 
       //Cisco Webex Meetings 
       var app = 'com.cisco.webex.meetings'
-      await scrapAppStore(page, app)
+      await scrapPlayStore(page, app)
       
       //Messenger 
       var app = 'com.facebook.orca'

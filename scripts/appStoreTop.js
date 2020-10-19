@@ -146,16 +146,16 @@ const { scrapAppStore } = require('./helpers')
       await scrapAppStore(page, app)
 
       //Venmo 
-      var app = 'venmo/id351727428'
-      await scrapAppStore(page, app)
+      // var app = 'venmo/id351727428'
+      // await scrapAppStore(page, app)
 
       //PayPal 
       var app = 'paypal-mobile-cash/id283646709'
       await scrapAppStore(page, app)
 
       //Cash App 
-      var app = 'cash-app/id711923939'
-      await scrapAppStore(page, app)
+      // var app = 'cash-app/id711923939'
+      // await scrapAppStore(page, app)
 
       //Airbnb 
       var app = 'airbnb/id401626263'

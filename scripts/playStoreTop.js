@@ -151,16 +151,16 @@ const { scrapPlayStore } = require('./helpers')
       await scrapPlayStore(page, app)  
       
       //Venmo 
-      var app = 'com.venmo'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.venmo'
+      // await scrapPlayStore(page, app)  
       
       //PayPal 
       var app = 'com.paypal.android.p2pmobile'
       await scrapPlayStore(page, app)  
       
       //Cash App 
-      var app = 'com.squareup.cash'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.squareup.cash'
+      // await scrapPlayStore(page, app)  
 
       //Airbnb 
       var app = 'com.airbnb.android'
@@ -219,8 +219,8 @@ const { scrapPlayStore } = require('./helpers')
       await scrapPlayStore(page, app)  
 
       //Yelp 
-      var app = 'com.yelp.android'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.yelp.android'
+      // await scrapPlayStore(page, app)  
       
       //Uber Eats 
       var app = 'com.ubercab.eats'
@@ -231,12 +231,12 @@ const { scrapPlayStore } = require('./helpers')
       await scrapPlayStore(page, app)  
       
       //DoorDash 
-      var app = 'com.dd.doordash'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.dd.doordash'
+      // await scrapPlayStore(page, app)  
       
       //Groupon 
-      var app = 'com.groupon'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.groupon'
+      // await scrapPlayStore(page, app)  
       
       //AliExpress 
       var app = 'com.alibaba.aliexpresshd'
@@ -251,8 +251,8 @@ const { scrapPlayStore } = require('./helpers')
       await scrapPlayStore(page, app)  
       
       //Shopee 
-      var app = 'com.shopee.th'
-      await scrapPlayStore(page, app)  
+      // var app = 'com.shopee.th'
+      // await scrapPlayStore(page, app)  
       
       //Photoshop Express 
       var app = 'com.adobe.psmobile'

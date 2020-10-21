@@ -60,7 +60,11 @@ const { scrapPlayStore } = require('./helpers')
 
       //Whatsapp 
       var app = 'com.whatsapp'
-      await scrapPlayStore(page, app)        
+      await scrapPlayStore(page, app)     
+      
+      //Viber 
+      var app = 'com.viber.voip'
+      await scrapPlayStore(page, app)   
       
       //Outlook 
       var app = 'com.microsoft.office.outlook'
@@ -132,6 +136,10 @@ const { scrapPlayStore } = require('./helpers')
       
       //Twitch 
       var app = 'tv.twitch.android.app'
+      await scrapPlayStore(page, app)  
+
+      //Discord 
+      var app = 'com.discord'
       await scrapPlayStore(page, app)  
       
       //Vimeo 
@@ -308,8 +316,36 @@ const { scrapPlayStore } = require('./helpers')
       
       //Confluence 
       var app = 'com.atlassian.android.confluence.core'
-      await scrapPlayStore(page, app)  
+      await scrapPlayStore(page, app) 
       
+      //Upwork for freelancers 
+      var app = 'com.upwork.android.apps.main'
+      await scrapPlayStore(page, app) 
+
+      //Upwork for clients 
+      var app = 'com.upwork.android.apps.client'
+      await scrapPlayStore(page, app) 
+      
+      //Fiverr
+      var app = 'com.fiverr.fiverr'
+      await scrapPlayStore(page, app)
+
+      //Freelancer
+      var app = 'com.freelancer.android.messenger'
+      await scrapPlayStore(page, app)
+
+      //Coursera
+      var app = 'org.coursera.android'
+      await scrapPlayStore(page, app)
+
+      //Udemy
+      var app = 'com.udemy.android'
+      await scrapPlayStore(page, app)
+
+      //Eventbrite
+      var app = 'com.eventbrite.attendee'
+      await scrapPlayStore(page, app)
+
       //Github 
       var app = 'com.github.android'
       await scrapPlayStore(page, app)  

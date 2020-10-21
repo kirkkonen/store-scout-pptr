@@ -33,6 +33,10 @@ const { scrapAppStore } = require('./helpers')
       var app = 'whatsapp-messenger/id310633997'
       await scrapAppStore(page, app)
 
+      //Viber
+      var app = 'viber-messenger-chats-calls/id382617920'
+      await scrapAppStore(page, app)
+
       //Reddit 
       var app = 'reddit/id1064216828'
       await scrapAppStore(page, app)
@@ -131,6 +135,10 @@ const { scrapAppStore } = require('./helpers')
 
       //Twitch 
       var app = 'twitch-live-game-streaming/id460177396'
+      await scrapAppStore(page, app)
+
+      //Discord 
+      var app = 'discord-talk-chat-hang-out/id985746746'
       await scrapAppStore(page, app)
 
       //Youtube 
@@ -292,6 +300,34 @@ const { scrapAppStore } = require('./helpers')
       //Confluence 
       var app = 'confluence-cloud/id1006971684'
       await scrapAppStore(page, app)
+
+      //Upwork for freelancers 
+      var app = 'upwork-for-freelancers/id1446736499'
+      await scrapAppStore(page, app)
+
+      //Upwork for clients 
+      var app = 'upwork-for-clients/id1464065313'
+      await scrapAppStore(page, app)
+
+      //Fiverr
+      var app = 'fiverr-freelance-services/id346080608'
+      await scrapAppStore(page, app) 
+
+      //Freelancer 
+      var app = 'freelancer-hire-find-jobs/id927810012'
+      await scrapAppStore(page, app) 
+
+      //Coursera
+      var app = 'coursera-learn-new-skills/id736535961'
+      await scrapAppStore(page, app) 
+
+      //Udemy 
+      var app = 'udemy-online-video-courses/id562413829'
+      await scrapAppStore(page, app)  
+      
+      //EventBrite
+      var app = 'eventbrite/id487922291'
+      await scrapAppStore(page, app)  
 
       //Github 
       var app = 'github/id1477376905'

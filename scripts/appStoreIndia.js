@@ -16,6 +16,15 @@ const { scrapAppStore } = require('./helpersIndia')
     await page.setGeolocation({ latitude: 51, longitude: 0})
     
 
+      // Cadillac 
+      var app = 'mycadillac/id398605251'
+      await scrapAppStore(page, app)
+
+      // Opel
+      var app = 'myopel/id1439342035'
+      await scrapAppStore(page, app)
+        
+
       // Exness 
       var app = 'exness-trader-trade-on-the-go/id1359763701'
       await scrapAppStore(page, app)

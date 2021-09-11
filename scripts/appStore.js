@@ -12,7 +12,14 @@ const { scrapAppStore } = require('./helpers')
     await context.overridePermissions("https://apps.apple.com", ["geolocation"])
 
     await page.goto(`https://apps.apple.com`);
-        
+      
+      // Cadillac 
+      var app = 'mycadillac/id398605251'
+      await scrapAppStore(page, app)
+
+      // Opel
+      var app = 'myopel/id1439342035'
+      await scrapAppStore(page, app)
     
       // FXPro CTrader
       var app = 'fxpro-ctrader/id838925664'
